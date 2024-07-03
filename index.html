@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scribbler - a codding landing page template for codrops</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+    />
+    <link rel="stylesheet" href="scribbler-global.css" />
+    <link rel="stylesheet" href="scribbler-landing.css" />
+    <link rel="author" href="humans.txt" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item">
+          <a href="doc.html" class="link link--dark"
+            ><i class="fa fa-book"></i> Documentation</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="Aegis pH.apk" class="link link--dark" download
+            ><i class="fa fa-download"></i> Download App</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">AEGIS pH</h1>
+      <p class="hero__description">Aplikasi Pemantau Kualitas Air</p>
+    </div>
+    <div class="hero__terminal">
+      <img src="Asset 1.png" alt="Description of your image" />
+    </div>
+
+    <div class="wrapper">
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Cepat & Ringan</h3>
+          <p>
+            Mulai memantau kualitas air dengan cepat di terminal! Tidak perlu
+            lagi membuka editor teks.
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Sinkronisasi File</h3>
+          <p>Simpan file Anda di Dropbox dan akses dari mana saja.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Aman</h3>
+          <p>
+            Enkripsi catatan Anda opsional. Tidak ada yang bisa mengakses
+            rahasia Anda!
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Konfigurasi</h3>
+          <p>
+            Simpan semua pengaturan Anda dalam satu file
+            <span class="code code--inline">config.json</span>. Tidak perlu
+            mengulangi pengaturan setiap kali membuat catatan.
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Penyorotan</h3>
+          <p>
+            Untuk keterbacaan yang lebih baik, aegis_ph memiliki skema warna
+            yang bersih dan indah untuk pemindaian file yang cepat.
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Keybindings</h3>
+          <p>
+            Anda dapat mengharapkan keybindings umum untuk aegis_ph. Sesuaikan
+            <span class="code code--inline">bindings.json</span> sesuai selera
+            Anda sendiri!
+          </p>
+        </div>
+      </div>
+      <div class="keybinding">
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Keybindings Default</h3>
+          <li>
+            Keluar tanpa menyimpan <span class="keybinding__label">Ctrl+C</span>
+          </li>
+          <li>Simpan <span class="keybinding__label">Cmd+S</span></li>
+          <li>
+            Simpan dan Keluar <span class="keybinding__label">Ctrl+D</span>
+          </li>
+          <li>Undo <span class="keybinding__label">Cmd+Z</span></li>
+        </ul>
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Keybindings Markdown</h3>
+          <li>
+            <span class="keybinding__label">Ctrl+A</span> Sisipkan Tautan
+            Markdown
+          </li>
+          <li>
+            <span class="keybinding__label">Ctrl+I</span> Sisipkan Gambar
+            Markdown
+          </li>
+          <li>
+            <span class="keybinding__label">Ctrl+V</span> Sisipkan Video YouTube
+          </li>
+          <li><span class="keybinding__label">Ctrl+T</span> Sisipkan Tabel</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p>Baca dokumentasi kami untuk keybindings lanjutan dan penyesuaian</p>
+        <a href="doc.html" class="button--primary">Dokumentasi</a>
+      </div>
+    </div>
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Log Perubahan</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.7</h4>
+            <small class="changelog__date">10/12/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>
+                Memperbaiki alur kerja menulis dengan key bindings yang lebih
+                baik
+              </li>
+              <li>Pembaruan desain</li>
+              <li>Verifikasi SSL untuk web hooks</li>
+              <li>Render Emoji</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.6</h4>
+            <small class="changelog__date">7/30/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Menambahkan dukungan Unicode</li>
+              <li>Penyorotan teks dasar</li>
+              <li>Desain segar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.5</h4>
+            <small class="changelog__date">5/10/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Simpan file md default di folder baru</li>
+              <li>Kemampuan untuk pencarian cepat pada catatan yang ada</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__callout">
+          <a href="#" class="button--secondary">Lihat Log Lengkap</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>

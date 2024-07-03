@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      AEGIS_pH Documentation - a code documentation page template for codrops
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scribbler-global.css" />
+    <link rel="stylesheet" href="scribbler-doc.css" />
+    <link rel="author" href="humans.txt" />
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">AEGIS_pH <span class="logo__thin"></span></h1>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="index.html" class="link link--darks"
+            ><i class="fa fa-home"></i> Home</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Installasi</li>
+          <li class="js-btn">Konfigurasi</li>
+          <li class="js-btn">Tentang Aplikasi</li>
+          <li class="js-btn">Cara Kerja Aplikasi</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Installasi</h3>
+          <p>
+            1. Unduh Dart SDK terbaru: Kunjungi halaman rilis Dart SDK dan unduh
+            versi stabil terbaru yang memenuhi rentang yang diperlukan.
+          </p>
+          <p>
+            2. Perbarui variabel lingkungan PATH: Pastikan variabel lingkungan
+            PATH Anda mencakup jalur ke Dart SDK.
+          </p>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Konfigurasi</h3>
+          <p>1. Clone Proyek dari GitHub</p>
+          <p>Clone repository:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                git clone https://github.com/username/Aegis_pH.git
+              </code>
+            </pre>
+          </div>
+          <p>
+            Gantilah https://github.com/username/Aegis_pH.git dengan URL
+            repository GitHub Anda.
+          </p>
+          <p>Masuk ke direktori proyek:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                cd Aegis_pH
+              </code>
+            </pre>
+          </div>
+          <p>2. Instalasi Dependensi</p>
+          <p>Instal dependensi Flutter:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                flutter pub get
+              </code>
+            </pre>
+          </div>
+          <p>3. Konfigurasi Proyek untuk Android</p>
+          <p>Konfigurasi file build.gradle:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                android {
+                    compileSdkVersion 31
+                    defaultConfig {
+                        applicationId "com.example.aegis_ph"
+                        minSdkVersion 21
+                        targetSdkVersion 31
+                        versionCode 1
+                        versionName "1.0"
+                    }
+                    ...
+                }
+              </code>
+            </pre>
+          </div>
+          <p>Perbarui nama paket di AndroidManifest.xml:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+                    package="com.example.aegis_ph"&gt;
+                    ...
+                &lt;/manifest&gt;
+              </code>
+            </pre>
+          </div>
+          <p>4. Konfigurasikan Ikon dan Splash Screen</p>
+          <p>Konfigurasikan ikon aplikasi:</p>
+          <p>
+            Gunakan paket flutter_launcher_icons untuk mengonfigurasi ikon
+            aplikasi.
+          </p>
+          <p>Tambahkan dependensi di pubspec.yaml dan konfigurasikan:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                dev_dependencies:
+                  flutter_launcher_icons: ^0.9.2
+
+                flutter_icons:
+                  android: true
+                  ios: false
+                  image_path: "assets/icon/icon.png"
+              </code>
+            </pre>
+          </div>
+          <p>Jalankan perintah berikut:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                flutter pub run flutter_launcher_icons:main
+              </code>
+            </pre>
+          </div>
+          <p>Konfigurasikan splash screen:</p>
+          <p>
+            Gunakan paket flutter_native_splash untuk mengonfigurasi splash
+            screen.
+          </p>
+          <p>Tambahkan dependensi di pubspec.yaml dan konfigurasikan:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                dev_dependencies:
+                  flutter_native_splash: ^1.2.0
+
+                flutter_native_splash:
+                  color: "#42a5f5"
+                  image: assets/splash.png
+                  android: true
+                  ios: false
+              </code>
+            </pre>
+          </div>
+          <p>Jalankan perintah berikut:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                flutter pub run flutter_native_splash:create
+              </code>
+            </pre>
+          </div>
+          <p>5. Jalankan Aplikasi di Perangkat Android</p>
+          <p>Hubungkan perangkat atau buka emulator:</p>
+          <p>Hubungkan perangkat Android atau buka emulator Android.</p>
+          <p>Verifikasi perangkat:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                flutter devices
+              </code>
+            </pre>
+          </div>
+          <p>Jalankan aplikasi:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                flutter run
+              </code>
+            </pre>
+          </div>
+          <p>6. Buat APK untuk Pengguna</p>
+          <p>Buat APK untuk Android:</p>
+          <p>Untuk membuat APK, jalankan perintah berikut:</p>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                flutter build apk --release
+              </code>
+            </pre>
+          </div>
+          <p>
+            File APK akan berada di
+            build/app/outputs/flutter-apk/app-release.apk.
+          </p>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Tentang Aplikasi</h3>
+          <p>
+            Aplikasi ini dirancang khusus untuk pengguna Android. Aplikasi ini
+            digunakan untuk mendeteksi kualitas air yang layak digunakan untuk
+            kebutuhan sehari-hari. Aplikasi ini menggunakan mikrokontroler
+            Arduino Uno dan menggunakan sensor-sensor dari perangkat eksternal
+            seperti DS18B20, PH-4520C, TDS Sensor Meter, dan ESP-32.
+          </p>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Cara Kerja Aplikasi</h3>
+          <p>
+            Aplikasi ini dirancang khusus untuk pengguna Android. Aplikasi ini
+            digunakan untuk mendeteksi kualitas air yang layak digunakan untuk
+            kebutuhan sehari-hari. Aplikasi ini menggunakan mikrokontroler
+            Arduino Uno dan menggunakan sensor-sensor dari perangkat eksternal
+            seperti DS18B20, PH-4520C, TDS Sensor Meter, dan ESP-32.
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer">AEGIS_pH</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
